@@ -3,10 +3,12 @@
 }
 
 <div class="jumbotron">
+    
+    <a href="@Url.Action("Index","Home")" class="navbar-right"><img src="~/Content/images/amigos.png" height="280" alt="Basefarm"></a>
     <h1>Amigos</h1>
-    <a href="@Url.Action("Index","Home")" class="navbar-left"><img src="~/Content/images/amigos.png" height="140" alt="Basefarm"></a>
     <h2>@typeof(ODD.Web.MvcApplication).Assembly.GetName().Version</h2>
     <h2>@Environment.MachineName</h2>
+    
 </div>
 
 <div class="row">
@@ -14,12 +16,6 @@
 
         <table class="table table-striped">
             <tbody>
-                <tr>
-                    <th>AppX</th>
-                    <td>
-                        @typeof(ODD.Web.MvcApplication).Assembly.GetName().Name
-                    </td>
-                </tr>
                 <tr>
                     <th>App version</th>
                     <td>
